@@ -1,0 +1,98 @@
+
+    /* Full-height container for vertical centering */
+    .signup-container-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 85vh; /* Full viewport height */
+        background-color: #f7f7f7; /* Background color for the whole page */
+    }
+
+    .signup-container {
+        background-color: #fff;
+        padding: 40px 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px; /* Max width for the form */
+    }
+
+    .signup-container h2 {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Input field container for emojis */
+    .input-group {
+        position: relative;
+        width: 100%;
+    }
+
+    .input-group .form-control {
+        padding-left: 40px; /* Space for emoji */
+        padding-right: 10px; /* Optional: Space for input text */
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+    }
+
+    /* Positioning the emojis */
+    .input-group .emoji {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        z-index: 10; /* Ensures emoji is above the input field */
+    }
+
+    .form-control:focus {
+        border-color: #fe424d;
+        box-shadow: 0 0 8px rgba(255, 127, 80, 0.5);
+    }
+
+    .form-label {
+        font-weight: 600;
+        font-size: 15px;
+        color: #555;
+    }
+
+    .invalid-feedback {
+        color: #fe424d;
+        font-size: 13px;
+    }
+
+    /* Submit button styling */
+    .btn-success {
+        background-color: #fe424d;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        width: 50%;
+    }
+
+    .btn-success:hover {
+        background-color: #ff0000;
+    }
+
+    .btn-success:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 68, 0, 0.8);
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .signup-container {
+            padding: 30px;
+        }
+        .btn-success {
+            width: 100%;
+        }
+    }

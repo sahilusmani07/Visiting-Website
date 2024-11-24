@@ -1,0 +1,105 @@
+
+    /* Ensure full viewport height */
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        background-color: #f7f7f7; /* Optional background color */
+        margin: 0;
+    }
+
+    /* Card styling */
+    .login-card {
+        background-color: #fff;
+        border-radius: 19px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        padding: 20px; 
+        width: 100%; 
+        max-width: 560px; 
+        transition: all 0.3s ease;
+    }
+
+    .login-card h2 {
+        font-size: 22px; 
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+        font-weight: 600;
+    }
+
+    .form-label {
+        font-weight: 600;
+        font-size: 14px;
+        color: #555;
+    }
+
+    /* Input field container for emojis */
+    .input-group {
+        position: relative;
+        width: 100%;
+    }
+
+    .input-group .form-control {
+        padding-left: 40px; /* Space for emoji */
+        padding-right: 10px; /* Optional: Space for input text */
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+    }
+
+    /* Positioning the emojis */
+    .input-group .emoji {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 18px;
+        z-index: 10; /* Ensures emoji is above the input field */
+    }
+
+    .form-control:focus {
+        border-color: #fe424d;
+        box-shadow: 0 0 6px rgba(255, 66, 77, 0.5);
+    }
+
+    .btn-success-login { /* More specific class for login button */
+        background-color: #fe424d;
+        border: none;
+        padding: 10px 0;
+        font-weight: 600;
+        color: white;
+        font-size: 15px;
+        border-radius: 8px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-success-login:hover {
+        background-color: #e34a5d;
+        color: white;
+    }
+
+    .forgot-password {
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .forgot-password a {
+        text-decoration: none;
+        color: #fe424d;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .forgot-password a:hover {
+        color: #d43f4c;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .login-card {
+            width: 80%;
+            padding: 18px;
+        }
+    }

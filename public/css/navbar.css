@@ -1,0 +1,104 @@
+.search-btn {
+    background-color: #fe424d; /* Corrected the color */
+    color: white;
+    border-radius: 20px;
+    padding: 0 1rem 0rem;
+  }
+
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: white;
+ 
+  }
+
+  .search-inp {
+    border-radius: 25px;
+    padding: 0.5rem 2.4rem 0.5rem 3rem;
+    margin-left: 6rem;
+    font-size: 1rem;
+  }
+
+  /* Custom Media Queries for Desktop */
+  @media (min-width: 768px) {
+    .navbar-nav.centered-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      background-color: white;
+      
+    }
+     
+
+    /* Centering the Navbar Links */
+    .navbar-nav.centered-nav .nav-link {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    /* Adding Hover Effect for Links */
+    .navbar-nav.centered-nav .nav-link:hover {
+      color: #fe424d;
+    }
+  }
+
+  /* Mobile View Customizations */
+  @media (max-width: 767px) {
+    .navbar-nav.ms-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+    }
+
+    .navbar-nav.ms-auto .nav-link {
+      margin: 10px;
+      font-size: 1rem;
+    }
+  }
+
+  /* Styling for SignUp and Login Buttons */
+  .navbar-nav .nav-link b {
+    font-weight: 600;
+    color: #fe424d;
+  }
+
+  /* Add new Listing link styling */
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  /* Hover effects for navbar links */
+  .navbar-nav .nav-link:hover {
+    color: #fe424d;
+  }
+    /* Mobile View Customizations */
+    @media (max-width: 767px) {
+    .navbar-nav.ms-auto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+    }
+
+    .navbar-nav.ms-auto .nav-link {
+      margin: 10px;
+      font-size: 1rem;
+    }
+
+    /* Hide Explore link in mobile view */
+    .navbar-nav .nav-link[href="/listings"] {
+      display: none;
+    }
+  }

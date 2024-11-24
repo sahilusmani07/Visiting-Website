@@ -1,0 +1,230 @@
+
+/* Ensure the card container is centered */
+.show-card {
+display: flex;
+justify-content: center;   /* Center horizontally */
+align-items: center;       /* Center vertically (if needed) */
+text-align: center;        /* Center text inside the card */
+}
+
+/* Image adjustment for responsiveness */
+.show-img {
+display: block;
+width: 100%;               /* Image takes up the full width */
+max-width: 100%;           /* Prevent image overflow */
+height: auto;              /* Maintain aspect ratio */
+margin: 0 auto;            /* Center image horizontally */
+}
+
+/* For smaller screens (phones and small devices) */
+@media (max-width: 575px) {
+.listing-card {
+padding: 10px;         /* Adjust padding for better spacing */
+text-align: center;    /* Ensure card text is centered */
+}
+
+.show-img {
+width: 90%;            /* Slightly reduce width to fit better on small screens */
+}
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+.show-card {
+display: flex;
+justify-content: center; /* Center the card horizontally */
+align-items: center;     /* Center vertically (if needed) */
+}
+
+.show-img {
+width: 90%;             /* Image takes up 90% of the container width */
+}
+}
+
+/* For large screens */
+@media (min-width: 992px) {
+.show-img {
+width: 100%;            /* Default width for large screens */
+}
+}
+
+.dark{
+    background-color: rgba(0, 0, 0, 0.879);
+    padding: 0.5rem;
+    border: none;
+}
+.dark:hover{
+    background-color: rgba(0, 0, 0, 0.879);
+    padding: 0.5rem;
+    border: none;
+}
+@media (max-width: 575px) {
+.btn-container {
+display: flex;  /* Stack the buttons vertically */
+justify-content: center;
+text-align: center;  /* Center-align the buttons */
+}
+
+.btn {
+width: 60%;  /* Buttons will take the full width of the parent container */
+margin-bottom: 8px;  /* Add some space between the buttons */
+margin-left:3rem;  /* Add some space between the buttons */
+
+}
+
+.btn:last-child {
+margin-bottom: 0;  /* Remove margin from the last button */
+}
+}
+
+/* Special button color on hover */
+.btn-danger:hover {
+background-color: #d9534f;  /* Lighter red on hover */
+border-color: #d43f00;  /* Darker red for border on hover */
+}
+/* Buttons and layout adjustments for smaller screens */
+@media (max-width: 575px) {
+.btn-container {
+display: flex;
+flex-direction: column;  /* Stack the buttons vertically */
+align-items: center;     /* Center-align the buttons */
+}
+
+.btn {
+width: 70%;              /* Buttons take up 70% of the container width */
+margin-bottom: 8px;      /* Add space between stacked buttons */
+}
+
+.review-section textarea {
+width: 100%;             /* Full-width text area on small screens */
+}
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+.listing-card,
+.review-section,
+.review-card {
+margin: 10px;           /* Adjust margin for smaller screens */
+padding: 10px;          /* Reduce padding */
+}
+
+.col-md-6 {
+flex: 0 0 100%;         /* Reviews take full width in smaller columns */
+max-width: 100%;
+}
+}
+
+/* Large screens and above */
+@media (min-width: 992px) {
+.btn-container {
+justify-content: center;  /* Center buttons in larger screens */
+}
+
+.btn {
+width: auto;              /* Buttons resize to fit their content */
+}
+}
+@media (max-width: 575px) {
+.listing-card {
+text-align: center;        /* Center-align the card content */
+padding: 10px;             /* Reduce padding */
+}
+
+.show-img {
+width: 80%;                /* Adjust image width to fit smaller screens */
+}
+}
+
+@media (max-width: 575px) {
+.show-img {
+display: block;       /* Treat the image as a block-level element */
+margin: 0 auto;       /* Horizontally center the image */
+max-width: 100%;      /* Prevent the image from overflowing */
+height: auto;         /* Maintain aspect ratio */
+}
+
+.listing-card {
+text-align: center;   /* Center the card content */
+padding: 10px;        /* Add padding for better spacing */
+}
+}
+
+
+/* For medium screens (≤ 768px) */
+@media (max-width: 768px) {
+.show-card {
+display: flex;
+justify-content: center;    /* Center the card horizontally */
+align-items: center;        /* Center vertically (if needed) */
+}
+
+.show-img {
+width: 90%;                /* Image takes 90% of the container width */
+}
+}
+
+/* For larger screens (≥ 992px) */
+@media (min-width: 992px) {
+.show-img {
+width: 100%;               /* Default width for large screens */
+}
+}
+/* Make sure the parent of the card is centered */
+.row.mt-3 {
+display: flex;
+justify-content: center;   /* Center the card horizontally */
+align-items: center;       /* Optionally center vertically */
+}
+
+/* Center the .listing-card itself */
+.show-card {
+display: flex;
+justify-content: center;   /* Center the card horizontally */
+align-items: center;       /* Vertically align items inside the card */
+text-align: center;        /* Center text inside the card */
+}
+
+/* Image adjustment for responsiveness */
+.show-img {
+display: block;
+width: 100%;               /* Ensure the image takes up the full width */
+max-width: 100%;           /* Prevent image overflow */
+height: auto;              /* Maintain aspect ratio */
+margin: 0 auto;            /* Center image horizontally */
+}
+
+/* For smaller screens (phones and small devices) */
+@media (max-width: 575px) {
+.listing-card {
+width: 100%;            /* Make the card full width */
+text-align: center;     /* Ensure card text is centered */
+padding: 10px;          /* Adjust padding for better spacing */
+}
+
+.show-img {
+width: 90%;             /* Slightly reduce image width */
+}
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+.listing-card {
+width: 80%;            /* Card takes up 80% of the container width */
+}
+
+.show-img {
+width: 100%;            /* Image takes full width */
+}
+}
+
+/* For large screens (desktop) */
+@media (min-width: 992px) {
+.listing-card {
+width: 50%;            /* Card width for large screens */
+}
+
+.show-img {
+width: 100%;            /* Image takes full width */
+}
+}

@@ -1,0 +1,91 @@
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Aligns filters and toggle button */
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter {
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    background-color: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .filter:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .filter i {
+    font-size: 1.5rem;
+    color: #fe424d;
+  }
+
+  .filter p {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+  }
+
+  .text-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes toggle to the right */
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .listing-link {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .listing-link:hover .listing-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .listing-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    border-bottom: 3px solid #fe424d;
+  }
+
+  .card-body {
+    padding: 1.2rem;
+    background-color: white;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .tax-info {
+    display: none;
+    color: #888;
+    font-size: 0.85rem;
+  }
